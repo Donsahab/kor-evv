@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+    <LinearLayout
+        android:id="@+id/nav_button_ll"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_40">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/nav_button"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:src="@drawable/menuicon"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/main_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_gravity="center"
+            android:gravity="center"
+            style="@style/xlargetextstyle"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/button_search"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/schedule"/>
+
+            <RelativeLayout
+                android:id="@+id/notification_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_40">
+
+            <ImageView
+                android:id="@+id/notification_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/notification"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_brightness_123_black_24dp"
+                android:id="@+id/noti_count"
+                android:text="0"
+                android:textColor="@color/green"
+                android:textSize="@dimen/space_8"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginBottom="@dimen/space_15"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>

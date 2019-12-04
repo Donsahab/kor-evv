@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#12456e</color>
+    <color name="colorPrimaryDark">#0D314D</color>
+    <color name="colorAccent">#f47625</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#E3E3E3</color>
+    <color name="graylight">#F5EBEB</color>
+    <color name="darl_gray">#868f98</color>
+    <color name="black">#545454</color>
+    <color name="dark_black">#000000</color>
+    <color name="dark_gray">#bab7b7</color>
+
+    <color name="color_1">#1bdc84</color>
+    <color name="color_green">#34bf49</color>
+    <color name="color_2">#1b4ddc</color>
+    <color name="color_3">#df1f30</color>
+    <color name="orange">#ffbb00</color>
+    <color name="yelow">#ffee05</color>
+    <color name="tab_shade">#FFE6DFE3</color>
+    <color name="purple">#ed0bc0</color>
+    <color name="green">#ed3851</color> <!--#ffbb00-->
+    <color name="light_gray">#f2f0f0</color>
+    <color name="darker_gray">#313133</color>
+    <color name="darker_gray1">#787878</color>
+    <color name="black_shade">#191919</color>
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dark_pink">#C50079</color>
+    <color name="tab_color">#EB269F</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="lightGreen">#5ca15b</color>
+    <color name="trasparentcolor">#80000000</color>
+</resources>

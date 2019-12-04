@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="wrap_content"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/drawer_header_icon"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_100"
+        android:layout_marginLeft="@dimen/space_15"
+        app:civ_border_color="@color/green"
+        app:civ_border_width="@dimen/space_3"
+        android:layout_marginTop="@dimen/space_10"
+        android:src="@drawable/sign_up_icon" />
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        style="@style/modelbodytextstyle"
+        android:layout_marginTop="@dimen/space_10"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/space_20"
+        android:text="Abd Er Rahman"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_3"
+        android:layout_marginBottom="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_email"
+        style="@style/normalbodytextstyle"
+        android:text="sample@gmail.com"
+        android:layout_marginLeft="@dimen/space_20"
+        android:textColor="@color/white"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/change_password"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_width="@dimen/space_25"
+            android:layout_height="@dimen/space_25"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

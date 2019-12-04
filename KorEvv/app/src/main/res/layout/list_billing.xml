@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:elevation="@dimen/space_5"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="@dimen/space_10"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginBottom="@dimen/space_5"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="@dimen/space80"
+                    android:layout_height="@dimen/space80"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:layout_gravity="center"
+                    android:src="@drawable/user"
+                    android:layout_marginBottom="@dimen/space_3"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="Michal Moore"
+                            android:id="@+id/name_tv"
+                            android:textStyle="bold"
+                            android:textColor="#313030"
+                            style="@style/modelbodytextstyle"
+
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/location_icon"
+                            android:layout_width="@dimen/space_15"
+                            android:layout_height="@dimen/space_25"
+                            android:src="@drawable/mappinicon"/>
+
+                        <TextView
+                            android:layout_toRightOf="@id/location_icon"
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:text="Ithum tower sector 63 noida"
+                            android:textColor="@color/colorPrimary"
+                            android:maxLength="50"
+                            style="@style/normalbodytextstyle"
+                            android:layout_height="wrap_content" />
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_marginBottom="@dimen/space_10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <ImageView
+                                    android:id="@+id/exp_title"
+                                    android:layout_width="@dimen/space_15"
+                                    android:src="@drawable/ic_phone_in_talk_black_24dp"
+                                    android:layout_height="@dimen/space_15" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:text="Phone No: +91 9540234716"
+                                    android:id="@+id/date_Tv"
+                                    style="@style/smallbodytextstyle"
+                                    android:textColor="@color/dark_black"
+                                    android:layout_marginLeft="4dp"
+                                    android:layout_toRightOf="@+id/exp_title"
+                                    android:layout_height="wrap_content" />
+
+                            </RelativeLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

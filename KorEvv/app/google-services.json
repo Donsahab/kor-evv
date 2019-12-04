@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1032125574849",
+    "firebase_url": "https://korevv-f188c.firebaseio.com",
+    "project_id": "korevv-f188c",
+    "storage_bucket": "korevv-f188c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032125574849:android:739727cbfc42475028ee40",
+        "android_client_info": {
+          "package_name": "dextrous.kor.evv.korevv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032125574849-lksuqrlg831oumdh04jqlbk7h32emod6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdtsvuMcpat0vSGUU5U7JLS6rXAeU6nP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032125574849-lksuqrlg831oumdh04jqlbk7h32emod6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

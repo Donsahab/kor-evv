@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.DocumentUploadActivity">
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        style="@style/my_button_style"/>
+    <TextView
+        android:id="@+id/document_upload_lebel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include"
+        style="@style/modelbodytextstylebold"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:padding="@dimen/space_10"
+        app:layout_constraintEnd_toEndOf="@+id/document_upload_lebel"
+        app:layout_constraintStart_toStartOf="@+id/document_upload_lebel"
+        app:layout_constraintTop_toBottomOf="@+id/document_upload_lebel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/space_10">
+
+            <LinearLayout
+                android:id="@+id/constraint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/image_icon"
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:src="@drawable/file_icon"
+                    android:layout_gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_docname"
+                    style="@style/modelbodytextstyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/space_10"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+                    android:layout_marginStart="@dimen/space_10"
+                    android:id="@+id/preview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    style="@style/my_txt_style"
+                  />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/select_doc_spinner_lebel"
+                style="@style/modelbodytextstyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+              />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/select_document_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_45"
+                android:layout_marginTop="@dimen/space_10"
+                android:theme="@style/Spinner"
+                android:textSize="@dimen/space_20"
+                style="@style/Widget.AppCompat.Spinner.Underlined"
+                android:background="@drawable/spinner_background"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_10"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/selelct_issue_date_lebel"
+                        style="@style/modelbodytextstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_5"
+                    />
+                    <EditText
+                        android:id="@+id/expiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_45"
+                        android:drawableRight="@drawable/calendar_icon"
+                        android:focusable="false"
+                        android:padding="@dimen/space_5"
+                        android:textAllCaps="false"
+                        style="@style/modelbodytextstyle"
+                        android:background="@drawable/popup_edit_text_background"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/space_10"
+                  >
+
+                    <TextView
+                        android:id="@+id/select_expiry_date_lebel"
+                        style="@style/modelbodytextstyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/space_5"
+                        />
+
+                    <EditText
+                        android:id="@+id/issue_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_45"
+                        android:drawableRight="@drawable/calendar_icon"
+                        android:focusable="false"
+                        style="@style/modelbodytextstyle"
+                        android:padding="@dimen/space_5"
+                        android:textAllCaps="false"
+                        android:background="@drawable/popup_edit_text_background"
+                        />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

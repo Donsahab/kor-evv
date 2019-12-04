@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ClockOutActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="@style/largetextstyle"
+            android:text="Michal Moore"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/space_5"
+        android:background="#fff">
+
+        <TextView
+            android:layout_marginTop="@dimen/space_10"
+            android:id="@+id/activity_text"
+            android:layout_toRightOf="@id/location_icon"
+            android:layout_width="wrap_content"
+            android:text="Selelct Activities for Personal Care"
+            android:textColor="@color/colorPrimary"
+            style="@style/modelbodytextstyle"
+            android:maxLength="50"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:id="@+id/services_recycler"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+
+            />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+            <!--<LinearLayout-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="@dimen/space_15"-->
+                <!--android:layout_marginTop="@dimen/space_25"-->
+                <!--android:orientation="vertical"-->
+                <!--android:layout_marginBottom="@dimen/space_25">-->
+                <!--<TextView-->
+                    <!--android:layout_toRightOf="@id/location_icon"-->
+                    <!--android:id="@+id/start_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Started Time : 10PM"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="@dimen/space_16"-->
+                    <!--android:maxLength="50"-->
+                    <!--android:layout_marginLeft="@dimen/space_5"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_toRightOf="@id/location_icon"-->
+                    <!--android:id="@+id/current_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Current Time : 11PM"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="@dimen/space_16"-->
+                    <!--android:maxLength="50"-->
+                    <!--android:layout_marginLeft="@dimen/space_5"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <!--<TextView-->
+                    <!--android:layout_toRightOf="@id/location_icon"-->
+                    <!--android:id="@+id/total_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:text="Tota Time : 1 hours"-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="@dimen/space_16"-->
+                    <!--android:maxLength="50"-->
+                    <!--android:layout_marginLeft="@dimen/space_5"-->
+                    <!--android:layout_height="wrap_content" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/clock_in_out"-->
+                <!--android:layout_width="@dimen/space80"-->
+                <!--android:layout_height="@dimen/space80"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:orientation="vertical"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_marginRight="@dimen/space_15"-->
+                <!--android:background="@drawable/circle_background_red"-->
+                <!--&gt;-->
+                <!--<ImageView-->
+                    <!--android:layout_width="@dimen/space_20"-->
+                    <!--android:layout_height="@dimen/space_20"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:layout_marginBottom="@dimen/space_10"-->
+                    <!--android:src="@drawable/ic_query_builder_black_24dp"/>-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/text_time"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Clock Out"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/space_12"/>-->
+
+                <!--<TextView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:id="@+id/timer_count"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text=""-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textSize="@dimen/space_12"/>-->
+
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/sign_button"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_15"
+            android:layout_width="match_parent"
+            android:elevation="@dimen/space_5"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/button_bachground_red"
+            android:layout_height="@dimen/space_50">
+
+
+            <ImageView
+                android:layout_width="@dimen/space_25"
+                android:layout_height="@dimen/space_25"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@android:drawable/ic_menu_save"/>
+            <TextView
+                android:id="@+id/save_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="Save and Next "
+                style="@style/normalbodytextstyle"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

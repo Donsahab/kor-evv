@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llCheckInternet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#fff"
+    android:gravity="center"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tower_transmissions" />
+
+    <TextView
+        style="@style/modelbodytextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/space_10"
+        android:text="No Internet Connection Found"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/normalbodytextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Slow or No Internet Connection found"
+        android:textColor="@color/black" />
+
+    <TextView
+        style="@style/normalbodytextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Check Internet Settings"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tryAgain"
+        style="@style/modelbodytextstyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/space_30"
+        android:background="@drawable/round_rect_actionbar"
+        android:gravity="center"
+        android:padding="@dimen/space_5"
+        android:text="Try again"
+        android:textColor="@color/white" />
+</LinearLayout>
+

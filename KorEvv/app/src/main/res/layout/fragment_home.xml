@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_20">
+
+            <TextView
+                android:id="@+id/text_month_year"
+                style="@style/modelbodytextstyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_30"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Month / Year" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginEnd="@dimen/space_40"
+            android:layout_marginStart="@dimen/space_40">
+            <Button
+                android:id="@+id/daily_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/space_20"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:background="@drawable/my_button"
+                android:layout_height="wrap_content"
+              />
+            <Button
+                android:id="@+id/weekly_button"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/space_20"
+                android:textAllCaps="false"
+                android:background="@drawable/my_button"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/daily_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/space_20">
+
+            <ImageView
+                android:id="@+id/left_date_scroll"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_50"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chevron_left_black_24dp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/date_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/right_date_scroll"
+                android:layout_width="@dimen/space_40"
+                android:layout_height="@dimen/space_50"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_chevron_right_black_24dp" />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="#ccc" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/no_data_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/space_25" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/space_5"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_5"
+        android:layout_marginBottom="@dimen/space_10"/>
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="bottom"
+        android:layout_marginStart="@dimen/space_10"
+        android:layout_marginEnd="@dimen/space_10"
+        android:layout_marginBottom="@dimen/space_10"
+        >
+
+        <Button
+            android:id="@+id/previousbutton"
+            style="@style/my_button_style"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginEnd="@dimen/space_5"
+            />
+
+        <Button
+            android:id="@+id/nextbutton"
+            style="@style/my_button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/space_5"/>
+    </LinearLayout>
+    <include layout="@layout/check_internet"
+        android:visibility="gone"/>
+</LinearLayout>

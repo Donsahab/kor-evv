@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <Button
+        android:id="@+id/ok_button"
+        style="@style/my_button_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/space_40"
+        android:layout_height="@dimen/space_40"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/korevv" />
+
+    <TextView
+        android:id="@+id/personal_care_time_lebel"
+        style="@style/normalbodytextstyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_personalcare_time"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        tools:text="@string/hello_blank_fragment" />
+
+    <TextView
+        android:id="@+id/spent_hours_lebel"
+        style="@style/modelbodytextstylebold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/respite_time_lebel"
+        style="@style/normalbodytextstyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/hello_blank_fragment"
+        app:layout_constraintEnd_toStartOf="@+id/tv_respite_care_time"
+        app:layout_constraintStart_toStartOf="@+id/personal_care_time_lebel"
+        app:layout_constraintTop_toBottomOf="@+id/personal_care_time_lebel" />
+
+    <TextView
+        android:id="@+id/tv_personalcare_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="@style/normalbodytextstyle"
+
+        app:layout_constraintBottom_toBottomOf="@+id/personal_care_time_lebel"
+        app:layout_constraintEnd_toEndOf="@+id/spent_hours_lebel"
+        app:layout_constraintTop_toTopOf="@+id/personal_care_time_lebel" />
+
+    <TextView
+        android:id="@+id/tv_respite_care_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="@style/normalbodytextstyle"
+
+        app:layout_constraintBottom_toBottomOf="@+id/respite_time_lebel"
+        app:layout_constraintEnd_toEndOf="@+id/tv_personalcare_time"
+        app:layout_constraintTop_toTopOf="@+id/respite_time_lebel" />
+
+    <TextView
+        android:id="@+id/total_time_lebel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        style="@style/normalbodytextstyle"
+
+        app:layout_constraintEnd_toStartOf="@+id/tv_total_time"
+        app:layout_constraintStart_toStartOf="@+id/respite_time_lebel"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <TextView
+        android:id="@+id/tv_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="@style/normalbodytextstyle"
+        app:layout_constraintBottom_toBottomOf="@+id/total_time_lebel"
+        app:layout_constraintEnd_toEndOf="@+id/view5"
+        app:layout_constraintTop_toTopOf="@+id/total_time_lebel" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="@+id/tv_respite_care_time"
+        app:layout_constraintStart_toStartOf="@+id/respite_time_lebel"
+        app:layout_constraintTop_toBottomOf="@+id/respite_time_lebel" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total_time_lebel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

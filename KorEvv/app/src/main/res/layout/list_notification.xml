@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/view_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green">
+
+        <ImageView
+            android:id="@+id/delete_icon"
+            android:layout_width="@dimen/ic_delete"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:src="@drawable/delete2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_toLeftOf="@id/delete_icon"
+            android:text="Delete"
+            android:textColor="#fff"
+            style="@style/normalbodytextstyle"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@drawable/edit_text"
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginTop="@dimen/space_10"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/space_10"
+            android:id="@+id/text_noti"
+            style="@style/normalbodytextstyle"
+            />
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/text_noti"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darker_gray"/>
+
+        <LinearLayout
+            android:id="@+id/doc_notification_layout"
+            android:layout_below="@+id/text_noti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+       >
+            <Button
+                android:id="@+id/update_document"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/space_50"
+                android:text="Update Document"
+                android:layout_marginStart="@dimen/space_10"
+                android:padding="@dimen/space_10"
+                android:paddingStart="@dimen/space_10"
+                android:paddingEnd="@dimen/space_10"
+                android:gravity="center"
+                android:textSize="@dimen/space_18"
+                android:textColor="@android:color/white"
+                android:textAllCaps="false"
+               android:background="@drawable/button_touch_green"/>
+            <TextView
+                style="@style/normalbodytextstyle"
+                android:id="@+id/tv_date"
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_10"
+                android:layout_marginEnd="@dimen/space_10"
+                android:text="date"/>
+
+            <View
+                android:layout_below="@+id/text_noti"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@color/darker_gray"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

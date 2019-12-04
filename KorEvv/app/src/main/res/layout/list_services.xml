@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/space_20"
+        android:layout_height="@dimen/space_20"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_fiber_manual_record_black_24dp"/>
+    <TextView
+        android:id="@+id/service_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="@dimen/space_5"
+        style="@style/modelbodytextstyle"
+        android:textColor="@color/black_shade"/>
+
+</LinearLayout>

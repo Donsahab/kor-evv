@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ScheduleActivity">
+
+    <LinearLayout
+        android:id="@+id/clock_in_out"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_100"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/space_10"
+            android:src="@drawable/ic_query_builder_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Clock in"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/timer_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_15"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_50"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_10"
+            android:src="@drawable/back_arrow" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Michal Moore"
+            android:textColor="@color/white"
+            android:textSize="@dimen/space_18" />
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".activity.ScheduleActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_20"
+                android:background="@color/white"
+                android:orientation="vertical"
+                tools:context=".activity.ScheduleActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_title"
+                        android:layout_width="@dimen/space_100"
+                        android:layout_height="@dimen/space_120"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:src="@drawable/user" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/space_5"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/location_icon"
+                                android:layout_width="@dimen/space_25"
+                                android:layout_height="@dimen/space_25"
+                                android:src="@drawable/mappinicon" />
+
+                            <TextView
+                                android:id="@+id/location"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:layout_toRightOf="@id/location_icon"
+                                android:text=""
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/space_16" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/phone_icon"
+                                android:layout_width="@dimen/space_25"
+                                android:layout_height="@dimen/space_25"
+                                android:src="@drawable/ic_phone_in_talk_black_24dp" />
+
+                            <TextView
+                                android:id="@+id/phone_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:layout_toRightOf="@id/location_icon"
+                                android:maxLength="50"
+                                android:text=""
+                                android:textColor="@color/darker_gray"
+                                android:textSize="@dimen/space_16" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/time_icon"
+                                android:layout_width="@dimen/space_25"
+                                android:layout_height="@dimen/space_25"
+                                android:src="@drawable/timeicon" />
+
+                            <TextView
+                                android:id="@+id/time_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/space_5"
+                                android:layout_toRightOf="@id/location_icon"
+                                android:maxLength="50"
+                                android:text=""
+                                android:textColor="@color/darker_gray"
+                                android:textSize="@dimen/space_16" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/diection_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/space_5"
+                            android:layout_marginTop="@dimen/space_10"
+                            android:layout_marginRight="@dimen/space_5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/call_icon"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/space_10"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_job"
+                                android:drawableLeft="@drawable/ic_phone_forwarded_black_24dp"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/space_8"
+                                android:paddingRight="@dimen/space_8"
+                                android:text="Make Call"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/space_10" />
+
+                            <TextView
+                                android:id="@+id/view_deatils_button"
+                                android:layout_width="@dimen/space_100"
+                                android:layout_height="@dimen/space_30"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="@dimen/space_10"
+                                android:layout_weight="1"
+                                android:background="@drawable/edit_text_job"
+                                android:drawableLeft="@drawable/ic_place_black_24dp"
+                                android:gravity="center"
+                                android:paddingLeft="@dimen/space_8"
+                                android:paddingRight="@dimen/space_8"
+                                android:text="Direction"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/space_10" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:text="Activities"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/space_20" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:layout_marginTop="@dimen/space_10"
+                    android:background="#ccc" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/services_recycler"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_15" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

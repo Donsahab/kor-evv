@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ccc"
+    tools:context=".activity.BillingSummaryActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_internet"
+        android:layout_margin="@dimen/space_5"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/space_100"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_width="@dimen/space_40"
+                        android:layout_height="@dimen/space_40"
+
+                        />
+                    <TextView
+                        android:id="@+id/contact_no"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:textColor="@color/colorAccent"
+                        style="@style/xlargetextstyle"
+
+                        />
+                    <TextView
+                        android:visibility="gone"
+                        android:textStyle="bold"
+                        android:id="@+id/contact_tilte"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cellicon"
+                        android:text="Call On "
+                        android:layout_marginLeft="@dimen/space_10"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/xlargetextstyle"
+                        />
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/agency_title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Agency: "
+                    android:textColor="@color/colorPrimary"
+                    style="@style/modelbodytextstyle"
+                    />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tv_agency_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black_shade"
+                    style="@style/largetextstyle"
+                    android:layout_marginLeft="@dimen/space_10"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/space_5"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/address_title"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:gravity="center"-->
+                    <!--android:layout_width="@dimen/space_120"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="Address: "-->
+                    <!--android:textColor="@color/colorPrimary"-->
+                    <!--android:textSize="@dimen/space_15"-->
+                    <!--/>-->
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tv_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black_shade"
+                    style="@style/modelbodytextstyle"
+                    android:layout_marginLeft="@dimen/space_10"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:id="@+id/email_title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/modelbodytextstyle"
+                    />
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tv_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/black_shade"
+                    style="@style/modelbodytextstyle"
+                    android:layout_marginLeft="@dimen/space_10"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:id="@+id/website_title"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/modelbodytextstyle"
+                    />
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/tv_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" "
+                    android:textColor="@color/black_shade"
+                    style="@style/modelbodytextstyle"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Amount @ $10/unit "
+                    android:textColor="@color/colorPrimary"
+                    style="@style/largetextstyle"
+                    android:textStyle="bold"
+                    android:layout_weight=".6"/>
+
+
+
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:layout_height=".5sp"
+                android:background="#ccc"/>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="@dimen/space_120"
+                    android:layout_height="wrap_content"
+                    android:text="Billing Amount: "
+                    android:textColor="@color/colorPrimary"
+                    style="@style/modelbodytextstyle"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_billing_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$120/- "
+                    android:textColor="@color/black_shade"
+                    style="@style/modelbodytextstyle"
+                    android:layout_marginLeft="@dimen/space_10"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Monthly Total "
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    style="@style/largetextstyle"
+                    android:layout_weight=".6"/>
+
+
+
+            </LinearLayout>
+            <View
+                android:visibility="gone"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:layout_height=".5sp"
+                android:background="#ccc"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="@dimen/space_120"
+                    android:layout_height="wrap_content"
+                    android:text="Hours: "
+                    android:textColor="@color/colorPrimary"
+                    style="@style/modelbodytextstyle"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_monthly_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120 Hrs "
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:textColor="@color/black_shade"
+                    style="@style/modelbodytextstyle"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:weightSum="2"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20">
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_width="@dimen/space_120"
+                    android:layout_height="wrap_content"
+                    android:text="Amount: "
+                    android:textColor="@color/colorPrimary"
+                    style="@style/modelbodytextstyle"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:id="@+id/tv_monthly_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$180/- "
+                    android:textColor="@color/black_shade"
+                    android:layout_marginLeft="@dimen/space_10"
+                    style="@style/modelbodytextstyle"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="#fff"
+        android:id="@+id/llCheckInternet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tower_transmissions" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/space_10"
+            android:text="No Internet Connection Found"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            style="@style/modelbodytextstyle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Slow or No Internet Connection found"
+            android:textColor="@color/black"
+            style="@style/smallbodytextstyle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Check Internet Settings"
+            android:textColor="@color/black"
+            style="@style/smallbodytextstyle"
+            />
+
+        <TextView
+            android:id="@+id/tryAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@drawable/round_rect_actionbar"
+            android:gravity="center"
+
+            android:padding="@dimen/space_5"
+            android:text="Try again"
+            android:textColor="@color/white"
+            style="@style/modelbodytextstyle"
+            />
+    </LinearLayout>
+</LinearLayout>

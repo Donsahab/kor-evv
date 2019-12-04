@@ -1,0 +1,146 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="alertDialog" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+        <item name="android:titleTextColor" tools:targetApi="m">@android:color/black</item>
+    </style>
+    <style name="normalbodytextstyle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="normalbodytextstylebold" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="modelbodytextstyle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="modelbodytextstylebold" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="smallbodytextstyle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="smallbodytextstylebold" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+
+    <style name="tinytextstyle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="tinytextstylebold" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+
+    <style name="largetextstyle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="largetextstylebold" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="xlargetextstyle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="xlargetextstylebold" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="my_txt_style" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/button_touch_green</item>
+        <item name="android:paddingStart">@dimen/space_20</item>
+        <item name="android:paddingEnd">@dimen/space_20</item>
+        <item name="android:paddingBottom">@dimen/space_6</item>
+        <item name="android:paddingTop">@dimen/space_6</item>
+        <item name="android:textSize">@dimen/space_25</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="my_txt_viewdetail_style" parent="TextAppearance.AppCompat">
+        <item name="android:background">@drawable/button_touch_green</item>
+        <item name="android:paddingStart">@dimen/space_20</item>
+        <item name="android:paddingEnd">@dimen/space_20</item>
+        <item name="android:paddingBottom">@dimen/space_6</item>
+        <item name="android:paddingTop">@dimen/space_6</item>
+        <item name="android:textSize">@dimen/space_40</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="my_button_style" parent="Widget.MaterialComponents.Button" >
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/space_20</item>
+        <item name="android:background">@drawable/button_background_accent</item>
+        <item name="cornerRadius">@dimen/space_4</item>
+    </style>
+    <style name="my_button_style_white" >
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/space_16</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_background_white</item>
+        <item name="cornerRadius">@dimen/space_4</item>
+
+    </style>
+    <style name="toolbartexttitle" parent="@android:style/TextAppearance.Widget.TextView" >
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+           <item name="android:fontFamily">@font/customfont</item>
+    </style>
+    <style name="Spinner" parent="Widget.AppCompat.Light.DropDownItem.Spinner">
+        <item name="android:paddingStart">0dp</item>
+        <item name="android:paddingEnd">0dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+</resources>

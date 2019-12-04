@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/space_300"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:background="@color/colorPrimary"
+       android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="@dimen/space_20"
+            android:layout_height="@dimen/space_20"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:id="@+id/select_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="@style/largetextstyle"
+            android:text="Select Month / Year"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_year"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20">
+        <Spinner
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_year"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_month"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:background="@drawable/edit_text"
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20">
+        <Spinner
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner_month"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/sign_up_button"
+        android:layout_width="@dimen/space_100"
+        android:layout_height="@dimen/space_30"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:textColor="@color/white"
+        android:text="Done"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_background_provider"
+        android:layout_below="@id/ll1"
+        style="@style/normalbodytextstyle"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginBottom="@dimen/space_15"/>
+
+
+</LinearLayout>

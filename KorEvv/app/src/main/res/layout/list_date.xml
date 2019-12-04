@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="@dimen/space_60"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_40"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:text="1"
+            style="@style/largetextstyle"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <ImageView
+            android:id="@+id/arrow_drop"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/space_15"
+            android:layout_height="@dimen/space_10"
+            android:src="@drawable/dropdown"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="1sp"
+        android:layout_height="@dimen/space_10"
+        android:layout_gravity="center_vertical"
+        android:background="@color/black"/>
+</LinearLayout>

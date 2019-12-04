@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".activity.ChangeLanguageActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="@dimen/space_30"
+            android:layout_height="@dimen/space_30"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_10"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="@style/largetextstyle"
+            android:text=""
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+       android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="You can't language without internet connnection."
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/green"
+            style="@style/xlargetextstyle"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_300"
+        app:cardCornerRadius="@dimen/space_3"
+        android:layout_margin="@dimen/space_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/select_language_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_30"
+                android:background="@drawable/background_primary"
+                android:layout_marginTop="@dimen/space_60"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_marginRight="@dimen/space_25"
+                android:elevation="@dimen/space_5"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/select_lang_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/modelbodytextstyle"
+                    android:text="Select Language"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    />
+                <ImageView
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="end"
+                    android:layout_width="@dimen/space_20"
+                    android:layout_height="@dimen/space_20"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:src="@drawable/dropdown"/>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView_lang"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_marginRight="@dimen/space_25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/sign_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/space_5"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/button_bachground_red"
+        android:layout_height="@dimen/space_50">
+
+
+        <TextView
+            android:id="@+id/save_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Save Language"
+            android:textColor="@color/white"
+            style="@style/normalbodytextstyle"
+            />
+    </LinearLayout>
+</LinearLayout>
